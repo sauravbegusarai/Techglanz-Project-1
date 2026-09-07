@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:  Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 25px 20px;
+        }
+
+        #user-name-1,
+        #user-name-2,
+        #user-name-3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .sector {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #667eea;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            padding: 5px 12px;
+            background-color: #f0f2ff;
+            border-radius: 20px;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="20211118_151329.jpg" alt="Sarah Anderson" class="card-image">
+            <div class="card-content">
+                <h2 id="user-name-1">S. Kumar</h2>
+                <span class="sector">ML</span>
+                <p class="bio"> ML focuses on algorithms that learn patterns from data instead of being explicitly programmed.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="WhatsApp Image 2026-01-08 at 15.21.33.jpeg" alt="James Mitchell" class="card-image">
+            <div class="card-content">
+                <h2 id="user-name-2">Saurav Kumar</h2>
+                <span class="sector">Full Stack Developer</span>
+                <p class="bio">Building scalable web applications with clean code and modern technologies.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="WhatsApp Image 2026-09-03 at 19.58.49.jpeg" alt="Emily Rodriguez" class="card-image">
+            <div class="card-content">
+                <h2 id="user-name-3">Saurav</h2>
+                <span class="sector">AI</span>
+                <p class="bio"> AI covers all techniques that allow machines to perform tasks requiring human-like intelligence (reasoning, problem-solving, planning, language understanding).</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
